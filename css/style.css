@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@font-face {
+/*@font-face {
     font-display: block;
     font-family:"Futura-LT-W01-Book";
     src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
@@ -12,6 +12,30 @@
     src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix");
     src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix") format("eot"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/26091050-06ef-4fd5-b199-21b27c0ed85e.woff2") format("woff2"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cca525a8-ad89-43ae-aced-bcb49fb271dc.woff") format("woff"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/88cc7a39-1834-4468-936a-f3c25b5d81a1.ttf") format("truetype"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/14d6bf5d-15f1-4794-b18e-c03fb9a5187e.svg#14d6bf5d-15f1-4794-b18e-c03fb9a5187e") format("svg");
 }
+*/
+@font-face {
+    font-display: block;
+    font-family:"Futura-LT-W01-Book";
+    src:url("../fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
+    src:url("../fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"),
+	url("../fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),
+	url("../fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"),
+	url("../fonts/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype"),
+	url("../fonts/dc423cc1-bf86-415c-bc7d-ad7dde416a34.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34") format("svg");
+}
+
+@font-face {
+    font-display: block;
+    font-family:"Futura-LT-W01-Light";
+    src:url("../fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix");
+    src:url("../fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix") format("eot"),
+	url("../fonts/26091050-06ef-4fd5-b199-21b27c0ed85e.woff2") format("woff2"),
+	url("../fonts/cca525a8-ad89-43ae-aced-bcb49fb271dc.woff") format("woff"),
+	url("../fonts/88cc7a39-1834-4468-936a-f3c25b5d81a1.ttf") format("truetype"),
+	url("../fonts/14d6bf5d-15f1-4794-b18e-c03fb9a5187e.svg#14d6bf5d-15f1-4794-b18e-c03fb9a5187e") format("svg");
+}
+
+
 html, body{height:100%; font-variant-numeric: lining-nums;}
 .clear{clear:both; overflow:hidden;}
 html{scroll-behavior: smooth;}
