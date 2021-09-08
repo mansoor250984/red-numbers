@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RED NUMBERS</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://use.fontawesome.com/a54b7a5712.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Find the initial scroll top when the page is loaded.
+  var initScrollTop = $(window).scrollTop();
+  // Set the image's vertical background position based on the scroll top when the page is loaded.
+  $(parallax1).css({'background-position-y' : (initScrollTop/25)+'%'});
+  $(parallax2).css({'background-position-y' : (initScrollTop/25)+'%'});
+  $(parallax3).css({'background-position-y' : (initScrollTop/25)+'%'});
+  // When the user scrolls...
+  $(window).scroll(function() {
+    // Find the new scroll top.
+    var scrollTop = $(window).scrollTop();
+    // Set the new background position.
+    $(parallax1).css({'background-position-y' : (scrollTop/25)+'%'});
+    $(parallax2).css({'background-position-y' : (scrollTop/25)+'%'});
+	$(parallax3).css({'background-position-y' : (scrollTop/25)+'%'});
+  });
+  
+});
+</script>
+</head>
+<body>
+<div class="header">
+<div class="head-holder">
+<div class="container">
+<div class="row">
+<div class="logo"><img src="images/999-logo.webp" alt="" /></div>
+<div class="logo-text"><h1>RED NUMBERS</h1>
+<span>One to Triple nine Collection</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div id="parallax1" class="parallax-slide">
+<div class="content-slide">
+    <h3>No.69</h3><span></span>
+  </div>
+</div>
+</div>
+<div class="col">
+<div id="parallax2" class="parallax-slide">
+<div class="content-slide">
+    <h3>No.52</h3><span></span>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div id="parallax3" class="parallax-slide">
+<div class="content-slide">
+    <h3>No.88</h3><span></span>
+  </div>
+</div>
+</div>
+</div>
+  <div class="type-animation">
+  <span class="text_1">Fancy heading on your static web page</span>
+  <span class="text_2">What?? How does it change without JavaScript?</span>
+  </div>
+  <div class="row text-center">
+  <div class="col-1"><svg viewBox="0 0 380 900">
+<text x="50%" y="50%" fill="transparent" text-anchore="middle">4</text>
+</svg></div>
+  <div class="col-2"><img src="images/HIGHLIGHTED.webp" alt="" /></div>
+  <div class="col-3"><svg viewBox="0 0 600 800">
+<text x="10%" y="50%" fill="transparent" text-anchore="left">299</text>
+</svg></div>
+  </div>
+  <div class="footer text-center">
+  <div class="container">
+  <div class="social">
+  <a href="http://youtube.com/user/Wix"><i class="fa fa-youtube-play"></i></a>
+  <a href="http://www.facebook.com/wix"><i class="fa fa-facebook"></i></a>
+  <a href="http://www.twitter.com/wix"><i class="fa fa-twitter"></i></a>
+  <a href="http://instagram.com/wix"><i class="fa fa-instagram"></i></a>
+  </div>
+  <p>&copy; 2021 <span class="red">Red Numbers</span> by 3baid. Proudly inspired by <span class="red">DNN</span></p>
+  </div>
+  </div>
+</body>
+</html>

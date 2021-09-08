@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+    font-display: block;
+    font-family:"Futura-LT-W01-Book";
+    src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
+    src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/dc423cc1-bf86-415c-bc7d-ad7dde416a34.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34") format("svg");
+}
+
+@font-face {
+    font-display: block;
+    font-family:"Futura-LT-W01-Light";
+    src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix");
+    src:url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2b40e918-d269-4fd9-a572-19f5fec7cd7f.eot?#iefix") format("eot"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/26091050-06ef-4fd5-b199-21b27c0ed85e.woff2") format("woff2"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cca525a8-ad89-43ae-aced-bcb49fb271dc.woff") format("woff"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/88cc7a39-1834-4468-936a-f3c25b5d81a1.ttf") format("truetype"),url("http://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/14d6bf5d-15f1-4794-b18e-c03fb9a5187e.svg#14d6bf5d-15f1-4794-b18e-c03fb9a5187e") format("svg");
+}
+html, body{height:100%; font-variant-numeric: lining-nums;}
+.clear{clear:both; overflow:hidden;}
+html{scroll-behavior: smooth;}
+*{padding:0px; margin:0px; box-sizing: border-box; outline:none; list-style:none;}
+ul, li{margin:0px; padding:0px;}
+img{border:0px; max-width:100%;}
+a{transition:all 0.3s ease-out 0s;text-decoration:none; color:#30BCED;} a:hover{text-decoration:none; color:#83dfff; text-decoration:underline;}
+a:hover img{opacity:.9;transition:all 0.3s ease-out 0s;}
+.marT1{margin-top:5px;} .marT2{margin-top:10px;} .marT3{margin-top:15px;} .marT4{margin-top:20px;} .marT5{margin-top:25px;} .marT6{margin-top:30px;} .marT7{margin-top:40px;}
+.padT1{padding-top:5px;} .padT2{padding-top:10px;} .padT3{padding-top:15px;} .padT4{padding-top:20px;} .padT5{padding-top:25px;} .padT6{padding-top:30px;} .padT7{padding-top:40px;}
+.padB1{padding-bottom:5px;} .padB2{padding-bottom:10px;} .padB3{padding-bottom:15px;} .padB4{padding-bottom:20px;} .padB5{padding-bottom:25px;} .padB6{padding-bottom:30px;} .padB7{padding-bottom:40px;}
+.red{color:#ff0000;}
+.text-center{text-align:center;}
+.width96{max-width:96%; margin:0 auto;}
+
+body{background:#000; font:400 16px/26px "Poppins", sans-serif; color:#ff0000;}
+.header{min-height:175px;}
+.head-holder{position:fixed; padding:20px 0; background:#000; width:100%; left:0; top:0; z-index:1;}
+.container{max-width:1000px; margin:0 auto;}
+.row{display:flex; flex-wrap:wrap; align-items:center;}
+.logo-text{text-align:right;}
+.logo-text h1{font-size:91px; font-weight:600;}
+.logo-text span{font:normal 34px "Futura-LT-W01-Book"; color:#fff; display:block; padding:12px 0 0 0; word-spacing:1px;}
+
+.parallax-slide {height: 150vh;}
+.content-slide {height: 150vh;text-align: center; padding-top:150px;}
+.content-slide h3{font:normal 50px "futura-lt-w01-light"; color:#fff;}
+.content-slide span{display:inline-block; width:0; height:6px; max-width:150px;}
+
+.content-slide span {
+  width: 0;
+  height: 6px; background:#fff;
+  animation: width 3s forwards 2s;
+} 
+#parallax1 .content-slide span {animation: width 3s forwards 2s;}
+#parallax2 .content-slide span {animation: width 3s forwards 3s;}
+#parallax3 .content-slide span {animation: width 3s forwards 4s;}
+
+@keyframes width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.content-slide h3 span{transition: width 2s linear 1s; width:100%;}
+.col{flex:0 0 33.333%; max-width:33.33%;}
+#parallax1{background: url('../images/69.webp') repeat center; background-attachment: fixed;}
+#parallax2{background: url('../images/52.png') no-repeat center center; background-attachment:fixed;}
+#parallax3{background: url('../images/88.png') repeat center center; background-attachment:fixed;}
+.col-1{flex:0 0 20%;}
+.col-2{flex:0 0 50%;}
+.col-3{flex:0 0 30%;}
+.footer{padding:100px 0;}
+.footer p{font:normal 21px "futura-lt-w01-light"; color:#fff; color:rgb(153, 150, 150);}
+.social{padding:10px 0 20px;}
+.social a{color:#fff; display:inline-block; padding:5px 3px;}
+
+svg text{
+stroke: #ff0000;
+font-size:220px;
+font-weight:700;
+text-align:left;
+stroke-width:6;
+animation: textAnimate 2s infinite alternate;
+}
+
+@keyframes textAnimate{
+0%{
+stroke-dasharray: 0 50%;
+stroke-dashoffset: 20%;
+}
+100%{
+stroke-dasharray: 50% 0;
+stroke-dashoffset: -20%;
+}
+}
+
+
+.type-animation{font-size:40px; line-height:50px; font-family:"futura-lt-w01-light"; text-align:center; font-weight:400; padding:120px 0 0;}
+
+.text_1 {
+  animation: text1;
+}
+
+.text_2 {
+  animation: text2;
+}
+
+.text_1, .text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(60, end);
+  animation-iteration-count: infinite;
+}
+
+.text_1::after, .text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 21em;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 17.2em;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+.logo{max-width:30%;}
+.logo-text{max-width:70%;}
+.logo-text h1{font-size:60px;}
+.logo-text span{font-size:23px;}
+.type-animation{padding-left:10%; padding-right:10%;}
+.text_1, .text_2{white-space: break-spaces; font-size:20px; line-height:26px; max-width:100%;}
+}
+
+@media only screen and (max-width: 700px) {
+.col, .col-1, .col-2, .col-3{max-width:100%; flex:0 0 100%;}
+.content-slide, .parallax-slide{height:70vh;}
+.col-1 svg, .col-3 svg{height:200px; width:100%; margin-left:-20%;}
+.col-1 svg text, .col-3 svg text{font-size:500px;}
+}
+
+@media only screen and (max-width: 568px) {
+.logo-text h1{font-size:40px;}
+.logo-text span{font-size:18px; padding-top:0;}	
+.type-animation{padding-bottom:100px;}
+}
+
+@media only screen and (max-width: 400px) {
+.logo-text h1{font-size:36px;}
+.logo-text span{font-size:14px; padding-top:0;}	
+
+}
+
+@media only screen and (max-width: 330px) {
+.logo-text h1{font-size:30px;}
+}
