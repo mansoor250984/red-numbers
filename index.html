@@ -12,17 +12,17 @@ $(document).ready(function() {
   // Find the initial scroll top when the page is loaded.
   var initScrollTop = $(window).scrollTop();
   // Set the image's vertical background position based on the scroll top when the page is loaded.
-  $(parallax1).css({'background-position-y' : (initScrollTop/85)+'%'});
+  $(parallax1).css({'background-position-y' : (initScrollTop/55)+'%'});
   $(parallax2).css({'background-position-y' : (initScrollTop/5)+'%'});
-  $(parallax3).css({'background-position-y' : (initScrollTop/85)+'%'});
+  $(parallax3).css({'background-position-y' : (initScrollTop/95)+'%'});
   // When the user scrolls...
   $(window).scroll(function() {
     // Find the new scroll top.
     var scrollTop = $(window).scrollTop();
     // Set the new background position.
-    $(parallax1).css({'background-position-y' : (scrollTop/85)+'%'});
+    $(parallax1).css({'background-position-y' : (scrollTop/55)+'%'});
     $(parallax2).css({'background-position-y' : (scrollTop/5)+'%'});
-	$(parallax3).css({'background-position-y' : (scrollTop/85)+'%'});
+	$(parallax3).css({'background-position-y' : (scrollTop/95)+'%'});
   });
   
 });
@@ -92,7 +92,7 @@ $(document).ready(function() {
   <div class="row text-center">
   <div class="col-1"><svg viewBox="0 0 380 950">
 <text class="text" x="35%" y="50%" fill="transparent" text-anchore="middle">4</text>
-<text class="text-span" x="18%" y="58%" fill="white" text-anchore="right">The first composite number</text>
+<text class="text-span" x="15%" y="58%" fill="white" text-anchore="right">The first composite number</text>
 </span>
 </svg></div>
   <div class="col-2"><img src="images/HIGHLIGHTED.webp" alt="" /></div>
