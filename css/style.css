@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /*@font-face {
     font-display: block;
     font-family:"Futura-LT-W01-Book";
@@ -127,8 +128,8 @@ stroke-dashoffset: -20%;
 }
 
 
-.col-3 h3{outline:none; font:500 140px/140px "Poppins"; font-weight:600; animation: animate 5s linear infinite; color: #033742; margin-top:-70px; padding-bottom:20px;}
-.col-3 .text-span{color:#fff; font:normal 19px "Futura-LT-W01-Book"; text-align:center;}
+.col-3 h3{outline:none; font:500 145px/145px "Poppins"; font-weight:600; animation: animate 5s linear infinite; color: #033742; margin-top:-70px; padding-bottom:20px; -webkit-box-reflect:below 1px linear-gradient(transparent, #0004);}
+.col-3 .text-span{color:#fff; font:normal 21px "Futura-LT-W01-Book"; text-align:center; word-spacing:-2px;}
 @keyframes animate{
 
 0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
@@ -139,16 +140,16 @@ text-shadow:none;
 18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%,100%
 {
 color:#fff;
-text-shadow: 0 0 10px #03bcf4,
-0 0 20px #03bcf4,
-0 0 40px #03bcf4,
-0 0 80px #03bcf4,
-0 0 160px #03bcf4;
+text-shadow: 0 0 10px #ff0000,
+0 0 20px #ff0000,
+0 0 40px #ff0000,
+0 0 80px #ff0000,
+0 0 160px #ff0000;
 }
 }
 
 
-.type-animation{font-size:32px; line-height:50px; font-family:"futura-lt-w01-light"; text-align:center; font-weight:400; padding:120px 0 0;}
+.type-animation{font-size:32px; line-height:50px; font-family:"Roboto"; text-align:center; font-weight:500; padding:120px 0 0;}
 .type-animation span em{font-style:normal; color:#fff;}
 
 #typed{white-space: break-spaces!important;}
