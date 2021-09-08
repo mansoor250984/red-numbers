@@ -128,7 +128,7 @@ stroke-dashoffset: -20%;
 }
 
 
-.col-3 h3{outline:none; font:500 145px/145px "Poppins"; font-weight:600; animation: animate 5s linear infinite; color: #033742; margin-top:-70px; padding-bottom:20px; /*-webkit-box-reflect:below 1px linear-gradient(transparent, #0004);*/}
+.col-3 h3{outline:none; font:500 155px/155px "Poppins"; font-weight:600; animation: animate 5s linear infinite; color: #033742; margin-top:-70px; padding-bottom:20px; /*-webkit-box-reflect:below 1px linear-gradient(transparent, #0004);*/}
 .col-3 .text-span{color:#fff; font:normal 21px "Futura-LT-W01-Book"; text-align:center; word-spacing:-2px;}
 @keyframes animate{
 
