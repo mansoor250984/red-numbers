@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /*@font-face {
     font-display: block;
     font-family:"Futura-LT-W01-Book";
@@ -57,8 +58,8 @@ body{background:#000; font:400 16px/26px "Poppins", sans-serif; color:#ff0000;}
 .container{max-width:1000px; margin:0 auto;}
 .row{display:flex; flex-wrap:wrap; align-items:center;}
 .logo-text{text-align:right;}
-.logo-text h1{font-size:91px; font-weight:600;}
-.logo-text span{font:normal 26px "Futura-LT-W01-Book"; color:#fff; display:block; padding:20px 0 0 0; word-spacing:1px;}
+.logo-text h1{font-size:115px; font-weight:400; font-family:"Bebas Neue";}
+.logo-text span{font:normal 24px "Futura-LT-W01-Book"; color:#fff; display:block; padding:20px 0 0 0; word-spacing:1px;}
 
 .parallax-slide {height: 170vh;}
 .content-slide {height: 170vh;text-align: center; padding-top:150px;}
@@ -84,12 +85,12 @@ body{background:#000; font:400 16px/26px "Poppins", sans-serif; color:#ff0000;}
 }
 .content-slide h3 span{transition: width 2s linear 1s; width:100%;}
 .col{flex:0 0 33.333%; max-width:33.33%;}
-#parallax1{background: url('../images/69.webp') repeat center; background-attachment: fixed;}
+#parallax1{background: url('../images/69.png') repeat center; background-attachment: fixed;}
 #parallax2{background: url('../images/52.png') no-repeat center center; background-attachment:fixed;}
 #parallax3{background: url('../images/88.png') repeat center center; background-attachment:fixed;}
-.col-1{flex:0 0 20%;}
+.col-1{flex:0 0 25%;}
 .col-2{flex:0 0 50%;}
-.col-3{flex:0 0 30%;}
+.col-3{flex:0 0 25%;}
 .footer{padding:100px 0;}
 .footer p{font:normal 21px "futura-lt-w01-light"; color:#fff; color:rgb(153, 150, 150);}
 .social{padding:10px 0 20px;}
@@ -97,7 +98,7 @@ body{background:#000; font:400 16px/26px "Poppins", sans-serif; color:#ff0000;}
 svg{position:relative;}
 svg .text{
 stroke: #ff0000;
-font-size:220px;
+font-size:170px;
 font-weight:700;
 text-align:left;
 stroke-width:6;
@@ -122,6 +123,27 @@ stroke-dashoffset: -20%;
 stroke-dasharray: 50% 0;
 stroke-dashoffset: -20%;
 
+}
+}
+
+
+.col-3 h3{outline:none; font:500 140px/140px "Poppins"; font-weight:600; animation: animate 5s linear infinite; color: #033742; margin-top:-70px; padding-bottom:20px;}
+.col-3 .text-span{color:#fff; font:normal 19px "Futura-LT-W01-Book"; text-align:center;}
+@keyframes animate{
+
+0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+color:#ff0000;
+text-shadow:none;
+}
+
+18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%,100%
+{
+color:#fff;
+text-shadow: 0 0 10px #03bcf4,
+0 0 20px #03bcf4,
+0 0 40px #03bcf4,
+0 0 80px #03bcf4,
+0 0 160px #03bcf4;
 }
 }
 
