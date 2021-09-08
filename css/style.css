@@ -58,10 +58,10 @@ body{background:#000; font:400 16px/26px "Poppins", sans-serif; color:#ff0000;}
 .row{display:flex; flex-wrap:wrap; align-items:center;}
 .logo-text{text-align:right;}
 .logo-text h1{font-size:91px; font-weight:600;}
-.logo-text span{font:normal 34px "Futura-LT-W01-Book"; color:#fff; display:block; padding:12px 0 0 0; word-spacing:1px;}
+.logo-text span{font:normal 26px "Futura-LT-W01-Book"; color:#fff; display:block; padding:20px 0 0 0; word-spacing:1px;}
 
-.parallax-slide {height: 150vh;}
-.content-slide {height: 150vh;text-align: center; padding-top:150px;}
+.parallax-slide {height: 170vh;}
+.content-slide {height: 170vh;text-align: center; padding-top:150px;}
 .content-slide h3{font:normal 50px "futura-lt-w01-light"; color:#fff;}
 .content-slide span{display:inline-block; width:0; height:6px; max-width:150px;}
 
@@ -94,111 +94,73 @@ body{background:#000; font:400 16px/26px "Poppins", sans-serif; color:#ff0000;}
 .footer p{font:normal 21px "futura-lt-w01-light"; color:#fff; color:rgb(153, 150, 150);}
 .social{padding:10px 0 20px;}
 .social a{color:#fff; display:inline-block; padding:5px 3px;}
-
-svg text{
+svg{position:relative;}
+svg .text{
 stroke: #ff0000;
 font-size:220px;
 font-weight:700;
 text-align:left;
 stroke-width:6;
-animation: textAnimate 2s infinite alternate;
+animation: textAnimate 5s infinite alternate .1s;
+animation-timing-function: ease-in-out;
 }
+svg .text-span{color:#fff; font:normal 24px "Futura-LT-W01-Book"; text-align:center;}
 
 @keyframes textAnimate{
+
+	
 0%{
 stroke-dasharray: 0 50%;
 stroke-dashoffset: 20%;
 }
-100%{
+90%{
 stroke-dasharray: 50% 0;
 stroke-dashoffset: -20%;
 }
+
+100%{
+stroke-dasharray: 50% 0;
+stroke-dashoffset: -20%;
+
+}
 }
 
 
-.type-animation{font-size:40px; line-height:50px; font-family:"futura-lt-w01-light"; text-align:center; font-weight:400; padding:120px 0 0;}
+.type-animation{font-size:32px; line-height:50px; font-family:"futura-lt-w01-light"; text-align:center; font-weight:400; padding:120px 0 0;}
+.type-animation span em{font-style:normal; color:#fff;}
 
-.text_1 {
-  animation: text1;
-}
-
-.text_2 {
-  animation: text2;
-}
-
-.text_1, .text_2 {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  position: relative;
-  animation-duration: 20s;
-  animation-timing-function: steps(60, end);
-  animation-iteration-count: infinite;
-}
-
-.text_1::after, .text_2::after {
-  content: "|";
-  position: absolute;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 1s;
-  animation-timing-function: steps(1, end);
-}
-
-@keyframes text2 {
-  0%, 50%, 100% {
-    width: 0;
-  }
-  
-  60%, 90% {
-    width: 21em;
-  }
-}
-
-@keyframes text1 {
-  0%, 50%, 100% {
-    width: 0;
-  }
-  10%, 40% {
-    width: 17.2em;
-  }
-}
-
-@keyframes caret {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-
+#typed{white-space: break-spaces!important;}
 @media only screen and (max-width: 800px) {
 .logo{max-width:30%;}
 .logo-text{max-width:70%;}
 .logo-text h1{font-size:60px;}
-.logo-text span{font-size:23px;}
+.logo-text span{font-size:18px; padding-top:9px;}
 .type-animation{padding-left:10%; padding-right:10%;}
 .text_1, .text_2{white-space: break-spaces; font-size:20px; line-height:26px; max-width:100%;}
+
 }
 
 @media only screen and (max-width: 700px) {
 .col, .col-1, .col-2, .col-3{max-width:100%; flex:0 0 100%;}
 .content-slide, .parallax-slide{height:70vh;}
 .col-1 svg, .col-3 svg{height:200px; width:100%; margin-left:-20%;}
-.col-1 svg text, .col-3 svg text{font-size:500px;}
+.col-1 svg .text, .col-3 svg .text{font-size:500px;}
+svg .text-span{font-size:70px; display:block; padding-top:20px;}
 }
 
 @media only screen and (max-width: 568px) {
-.logo-text h1{font-size:40px;}
-.logo-text span{font-size:18px; padding-top:0;}	
+.logo-text h1{font-size:54px;}
+.logo-text span{font-size:17px; padding-top:5px;}	
 .type-animation{padding-bottom:100px;}
+}
+@media only screen and (max-width: 480px) {
+.logo-text h1{font-size:45px;}
+.logo-text span{font-size:15px;}	
 }
 
 @media only screen and (max-width: 400px) {
 .logo-text h1{font-size:36px;}
-.logo-text span{font-size:14px; padding-top:0;}	
+.logo-text span{font-size:12px; padding-top:0;}	
 
 }
 

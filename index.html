@@ -12,21 +12,23 @@ $(document).ready(function() {
   // Find the initial scroll top when the page is loaded.
   var initScrollTop = $(window).scrollTop();
   // Set the image's vertical background position based on the scroll top when the page is loaded.
-  $(parallax1).css({'background-position-y' : (initScrollTop/25)+'%'});
-  $(parallax2).css({'background-position-y' : (initScrollTop/25)+'%'});
-  $(parallax3).css({'background-position-y' : (initScrollTop/25)+'%'});
+  $(parallax1).css({'background-position-y' : (initScrollTop/85)+'%'});
+  $(parallax2).css({'background-position-y' : (initScrollTop/5)+'%'});
+  $(parallax3).css({'background-position-y' : (initScrollTop/85)+'%'});
   // When the user scrolls...
   $(window).scroll(function() {
     // Find the new scroll top.
     var scrollTop = $(window).scrollTop();
     // Set the new background position.
-    $(parallax1).css({'background-position-y' : (scrollTop/25)+'%'});
-    $(parallax2).css({'background-position-y' : (scrollTop/25)+'%'});
-	$(parallax3).css({'background-position-y' : (scrollTop/25)+'%'});
+    $(parallax1).css({'background-position-y' : (scrollTop/85)+'%'});
+    $(parallax2).css({'background-position-y' : (scrollTop/5)+'%'});
+	$(parallax3).css({'background-position-y' : (scrollTop/85)+'%'});
   });
   
 });
 </script>
+<script src="js/typed.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="header">
@@ -35,7 +37,7 @@ $(document).ready(function() {
 <div class="row">
 <div class="logo"><img src="images/999-logo.webp" alt="" /></div>
 <div class="logo-text"><h1>RED NUMBERS</h1>
-<span>One to Triple nine Collection</span></div>
+<span>A Prestigious NFT Collection of 999 Numbers</span></div>
 </div>
 </div>
 </div>
@@ -65,16 +67,38 @@ $(document).ready(function() {
 </div>
 </div>
   <div class="type-animation">
-  <span class="text_1">Fancy heading on your static web page</span>
-  <span class="text_2">What?? How does it change without JavaScript?</span>
+  <div id="typed-strings">
+  <span class="text_1"><em>No. 9</em> - the first odd number that is composite.</span>
+  <span class="text_2"><em>No. 3</em> - the Trinity.</span>
+  <span class="text_3"><em>No. 69</em> - used as slang to refer to a sexual act.</span>
+  <span class="text_4"><em>No. 1</em> - the multiplicative identity.</span>
+  <span class="text_5"><em>No. 16</em> - the number of digits in the hexadecimal number system.</span>
+  <span class="text_6"><em>No. 365</em> - the number of days in the common year.</span>
+  <span class="text_7"><em>No. 60</em> - the number base for some ancient counting systems.</span>
+  <span class="text_8"><em>No. 72</em> - the smallest Achilles number.</span>
+  <span class="text_9"><em>No. 25</em> - the first centered square number besides No. 1 that is also a square number.</span>
+  <span class="text_10"><em>No. 36</em> - the smallest number which is perfect power but not prime power.</span>
+  <span class="text_11"><em>No. 18</em> - considered a "lucky" number due to it being the value for life in Jewish numerology.</span>
+  <span class="text_12"><em>No. 496</em> - the third perfect number.</span>
+  <span class="text_13"><em>No. 6</em> - the first of the series of perfect numbers, whose proper factors sum to the number itself.</span>
+  <span class="text_14"><em>No. 12</em> - the number base for measuring time in many civilizations.</span>
+  <span class="text_15"><em>No. 8</em> - the number of bits in a byte.</span>
+    </div>
+    <span id="typed" style="white-space:pre;"></span>
+  
+  
+  
   </div>
   <div class="row text-center">
-  <div class="col-1"><svg viewBox="0 0 380 900">
-<text x="50%" y="50%" fill="transparent" text-anchore="middle">4</text>
+  <div class="col-1"><svg viewBox="0 0 380 950">
+<text class="text" x="40%" y="50%" fill="transparent" text-anchore="middle">4</text>
+<text class="text-span" x="26%" y="58%" fill="white" text-anchore="right">The first composite number</text>
+</span>
 </svg></div>
   <div class="col-2"><img src="images/HIGHLIGHTED.webp" alt="" /></div>
   <div class="col-3"><svg viewBox="0 0 600 800">
-<text x="10%" y="50%" fill="transparent" text-anchore="left">299</text>
+<text x="10%" y="50%" fill="transparent" text-anchore="left"  class="text" >27</text>
+<text class="text-span" x="0%" y="60%" fill="white" text-anchore="middle">The cube of 3, the value of 33</text>
 </svg></div>
   </div>
   <div class="footer text-center">
