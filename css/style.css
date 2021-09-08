@@ -101,7 +101,7 @@ font-size:220px;
 font-weight:700;
 text-align:left;
 stroke-width:6;
-animation: textAnimate 5s infinite alternate .1s;
+animation: textAnimate 3s infinite alternate .1s;
 animation-timing-function: ease-in-out;
 }
 svg .text-span{color:#fff; font:normal 24px "Futura-LT-W01-Book"; text-align:center;}
@@ -113,7 +113,7 @@ svg .text-span{color:#fff; font:normal 24px "Futura-LT-W01-Book"; text-align:cen
 stroke-dasharray: 0 50%;
 stroke-dashoffset: 20%;
 }
-90%{
+80%{
 stroke-dasharray: 50% 0;
 stroke-dashoffset: -20%;
 }
